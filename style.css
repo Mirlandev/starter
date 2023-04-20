@@ -53,12 +53,6 @@ body {
 	text-align: center;
 	font-weight: 600;
 }
-@media (max-width: 840px) {
-	.solutions__subtitle {
-		margin: 20px auto;
-		font-size: 40px;
-	}
-}
 @media (max-width: 750px) {
 	.solutions__subtitle {
 		font-size: 28px;
@@ -67,16 +61,6 @@ body {
 @media (max-width: 460px) {
 	.solutions__subtitle {
 		font-size: 26px;
-	}
-}
-@media (max-width: 440px) {
-	.solutions__subtitle {
-		font-size: 30px;
-	}
-}
-@media (max-width: 390px) {
-	.solutions__subtitle {
-		font-size: 24px;
 	}
 }
 
@@ -121,11 +105,7 @@ body {
 		font-size: 17px;
 	}
 }
-@media (max-width: 440px) {
-	.solutions__item h3 {
-		font-size: 15px;
-	}
-}
+
 
 .solutions__item p {
 	font-weight: 400;
@@ -136,11 +116,6 @@ body {
 @media (max-width: 460px) {
 	.solutions__item p {
 		font-size: 16px;
-	}
-}
-@media (max-width: 440px) {
-	.solutions__item p {
-		font-size: 14px;
 	}
 }
 
@@ -157,7 +132,6 @@ body {
 
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 14px;
-	font-weight: 400;
 	color: #56565A;
 }
 
@@ -166,42 +140,42 @@ body {
 	flex-direction: column;
 }
 
-.conditions__plan h2 {
+.plan__title {
 	font-family: 'Roboto Condensed';
 	font-weight: 700;
 	font-size: 36px;
 	line-height: 38px;
 }
 @media (max-width: 370px) {
-	.conditions__plan h2 {
+	.plan__title {
 		font-size: 30px;
 	}
 }
 
-.conditions__plan p {
+.plan__text {
 	padding: 15px 0 30px 0;
 	max-width: 470px;
 	font-size: 16px;
 	line-height: 22px;
 }
-@media (max-width: 350px) {
-	.conditions__plan p {
+/* @media (max-width: 350px) {
+	.plan__text {
 		font-size: 14px;
 	}
-}
+} */
 
-.plan__box-link {
+.conditions__box-link {
 	display: flex;
 	gap: 15px;
 	flex-wrap: wrap;
 }
 @media (max-width: 350px) {
-	.plan__box-link {
+	.conditions__box-link {
 		flex-wrap: nowrap;
 	}
 }
 
-a {
+.box-link__link {
 	text-decoration: none;
 	color: #fff;
 	padding: 12px 40px;
@@ -213,25 +187,24 @@ a {
 	text-align: center;
 	transition: .2s;
 }
-
-a:hover {
+.box-link__link:hover {
 	background-color: #0e569a;
 }
 
-.card-list__card-item {
+.conditions__cards {
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	gap: 15px;
 	flex-wrap: wrap;
 }
 @media (max-width: 600px) {
-	.card-list__card-item {
+	.conditions__cards {
 		display: flex;
 		flex-direction: column;
 	}
 }
 
-.item {
+.conditions__card {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -245,7 +218,7 @@ a:hover {
 	position: relative;
 }
 
-.item::after {
+.conditions__card::after {
 	position: absolute;
 	content: '';
 	width: 170px;
@@ -259,7 +232,7 @@ img {
 	height: 30px;
 }
 
-.item h3 {
+.conditions__card h3 {
 	padding: 10px 0 30px 0;
 	max-width: 179px;
 	font-weight: 700;
@@ -268,21 +241,21 @@ img {
 	text-align: center;
 }
 
-.item p {
+.conditions__card p {
 	max-width: 220px;
 	line-height: 19px;
 	text-align: center;
 }
 
-.card-item_1 {
+.conditions__card--first {
 	grid-row: span 1/1;
 }
 
-.card-item_2 {
+.conditions__card--second {
 	grid-row: span 1/2;
 }
 
-.card-item_3 {
+.conditions__card--third {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -297,7 +270,7 @@ img {
 	position: relative;
 }
 
-.card-item_3::after {
+.conditions__card--third::after {
 	position: absolute;
 	content: '';
 	width: 170px;
@@ -305,7 +278,7 @@ img {
 	background-color: #E5E5E5;
 }
 
-.card-item_3 h3 {
+.conditions__card--third h3 {
 	max-width: 226px;
 	padding: 10px 0 30px 0;
 	font-weight: 700;
@@ -314,7 +287,7 @@ img {
 	text-align: center;
 }
 
-.card-item_3 p {
+.conditions__card--third p {
 	max-width: 270px;
 	line-height: 19px;
 	text-align: center;
